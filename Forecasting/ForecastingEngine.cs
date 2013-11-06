@@ -15,7 +15,7 @@ namespace Forecasting
                 in messages.OrderByDescending(x => x.LastReportedAt))
             {
 
-                //if level is greater than last reported, they probably replaced the cartridge
+                //if level is greater than last reported, they probably replaced the cartridge and this report should not be counted toward average
 
                 //calculate average daily use, keep in mind it might not have been reported every day (some days may have been skipped)
 
